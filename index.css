@@ -7,7 +7,7 @@
 
 body{
     background-color: #222;
-
+    min-width: 320px;
 }
 
 img{
@@ -290,7 +290,79 @@ main{
     height: 3.125em;
 }
 
+.faq{
+    max-width: 815px;
+    margin: 0 auto;
+}
 
+.faq .card-text{
+    text-align: center;
+}
+
+.accordion{
+    margin: 2em auto;
+}
+
+.accordion-item{
+    list-style-type: none;
+    margin: 0 0 8px;
+}
+
+.accordion-item-header{
+    color: #fff;
+    text-align: start;
+    border: 0;
+    font-weight: 400;
+    font-size: 1.625rem;
+    margin-bottom: 1px;
+    position: relative;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    width: 100%;
+    background-color: #303030;
+    cursor: pointer;
+}
+
+.accordion-item-body{
+    color: #fff;
+    font-weight: 400;
+    padding: 1.2em;
+    background-color: #303030;
+}
+
+.svg-plus{
+    fill: #fff;
+    width: 1em;
+    right: 1em;
+    position:absolute;
+    top: 33%;
+    transition: 300ms;
+}
+
+.active .svg-plus{
+    transform: rotate(45deg);
+    transition: 300ms;
+}
+
+.closed {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s cubic-bezier(.5,0,.1,1);
+    font-weight: 400;
+    font-size: 1.625rem;
+    padding: 0;
+}
+
+.active + .accordion-item-body.closed{
+    max-height: 1200px;
+    transition: max-height .25s cubic-bezier(.5,0,.1,1);
+    font-weight: 400;
+    font-size: 1.625rem;
+}
+
+.accordion-item-body span{
+    display: inline-block;
+    padding: 1.2em;
+}
 
 .order{
     order: 2;
