@@ -80,7 +80,7 @@ h3.hero-text{
     font-size: 1.2rem;
 }
 
-form{
+.sign-up{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -376,6 +376,124 @@ main{
     order: 2;
 }
 
+footer.footer-card-login>section,
+footer.card>section{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.font-footer-color,
+.font-footer-color li{
+    color: #737373;
+}
+
+
+
+.site-footer{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-top{
+    margin-bottom: 30px;
+}
+
+.footer-link{
+    list-style-type: none;
+    font-size: 13px;
+    max-width: 1000px;
+}
+
+ul.footer-link>li{
+    margin-left: -3px;
+
+}
+
+.footer-link-item{
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 16px;
+    min-width: 100px;
+    padding: 0 12px 0 0;
+    vertical-align: top;
+    width: 25%;
+}
+
+.footer-link-item a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.footer-link-item a:hover{
+    text-decoration: dashed;
+}
+
+/* LOGIN PAGE */
+
+.login-content{
+    /* margin-bottom: 90px; */
+    padding: 60px 68px 40px;
+    min-height: 660px;
+    max-width: 450px;
+    margin: 0 auto 90px;
+    background-color: #000000bf;
+    border-radius: 4px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.login-form-inputs{
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.user-data{
+    background-color: #333;
+    border-radius: 4px;
+    border: none;
+    min-width: 100%;
+    margin-bottom: 16px;
+    padding: 5px 15px;
+    height: 50px;
+    color: #fff;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+
+.login-button{
+    color: #fff;
+    background-color: #dc1216;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.link-hovered{
+    color :#fff;
+    text-decoration: none;
+}
+
+.link-hovered:hover{
+    text-decoration: dashed;
+}
+
+.footer-card-login{
+    background-color: #000000bf;
+    padding: 75px 45px;
+}
+
+.lang-2{
+    margin-top: 1.3rem;
+    margin-left: 3rem;
+}
 
 
 @media screen and (max-width : 1450px){
@@ -418,7 +536,7 @@ main{
         order: 0;
     }
 
-    form{
+    .sign-up{
         flex-direction: column;
         align-items: center;
         height: auto;
@@ -467,9 +585,17 @@ main{
         margin: 0;
     }
 
+    .animation-image>img{
+        height: 4em;
+    }
+
     .accordion{
         margin: 1.5em auto;
         width: 90%;
+    }
+
+    .lang-2{
+        margin-left: 2rem;
     }
     
 }
@@ -498,8 +624,12 @@ main{
         margin-bottom: .8rem;
     }
 
-    form{
+    .sign-up{
         width: 80vw;
+    }
+
+    .lang-2{
+        margin-left: 1rem;
     }
 }
 
@@ -555,7 +685,20 @@ main{
         padding: 0;
     }
 
+    
+    .animation-image>img{
+        height: 3em;
+    }
+
     .accordion{
         width: 100%;
+    }
+
+    .accordion-item-header{
+        font-size: 1rem;
+    }
+
+    .lang-2{
+        margin-left: .5rem;
     }
 }

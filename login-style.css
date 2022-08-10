@@ -1,0 +1,25 @@
+@media screen and (max-width : 740px){
+    .hero-image{
+        background-color: #000;
+        border: none;
+    }
+
+    .login-content{
+        min-height: auto;
+        max-width: 100%;
+        padding: 0 5%;    
+    }
+
+    .footer-card-login{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 20px;
+    }
+
+    .line-divide{
+        height: 0;
+        width: 100%;
+        border-top: 1px solid #e5e5e5;
+        margin-bottom: 24px;
+    }
+}
